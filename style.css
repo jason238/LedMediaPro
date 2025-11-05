@@ -1,0 +1,290 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #222;
+}
+/* --- Navigation & Logo Improvements --- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a0a0a;
+  color: #fff;
+  padding: 0 2rem; /* removed vertical padding to let height define space */
+  height: 100px; /* make header taller */
+  box-sizing: border-box;
+}
+
+/* Logo fills the full header height */
+nav .logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+nav .logo img {
+  height: 100%; /* fills header vertically */
+  width: auto;
+  display: block;
+}
+
+/* Navigation links */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a.active,
+nav a:hover {
+  color: #00ccff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav {
+    height: 70px;
+    padding: 0 1rem;
+  }
+
+  nav .logo img {
+    height: 80%; /* reduce size slightly on mobile */
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #001f3f, #0074d9);
+  color: #fff;
+}
+.hero .btn {
+  display: inline-block;
+  background: #00ccff;
+  color: #111;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* Smaller hero for subpages */
+.hero-small {
+  padding: 2.5rem 2rem;
+  background: linear-gradient(135deg, #001f3f, #0074d9);
+  color: #fff;
+  text-align: center;
+}
+
+.hero-small h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-small p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3rem 2rem;
+  background: #f7f7f7;
+}
+.features div {
+  width: 30%;
+  min-width: 250px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.page-header {
+  text-align: center;
+  padding: 3rem 2rem 1rem;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.product {
+  width: 300px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* --- Gallery Styles --- */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.gallery-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto 20px;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about, .contact {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+footer a {
+  color: #00ccff;
+  text-decoration: none;
+}
+
+
+/* --- Contact Page Redesign --- */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-form, .contact-info {
+  flex: 1 1 350px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.contact-form h3, .contact-info h3 {
+  margin-bottom: 1rem;
+  color: #0074d9;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contact-form button {
+  background: #00ccff;
+  color: #111;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #0099cc;
+  color: #fff;
+}
+
+.contact-info p {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.contact-info a {
+  color: #0074d9;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Smaller, neater map */
+.map iframe {
+  border-radius: 10px;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.about ul {
+  margin: 20px 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.about li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+
+.intro-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  padding: 30px 0;
+}
+.intro-video video {
+  width: 45%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+@media (max-width: 768px) {
+  .intro-video video {
+    width: 90%;
+  }
+}
