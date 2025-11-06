@@ -101,6 +101,11 @@ nav a:hover {
   margin: 0 auto;
 }
 
+.hero-small {
+  padding: 1.5rem 2rem;     /* smaller hero padding */
+  margin-bottom: 1rem;      /* little breathing room below hero */
+}
+
 
 .features {
   display: flex;
@@ -188,9 +193,10 @@ footer a {
 /* --- Contact Page Redesign --- */
 .contact-container {
   display: flex;
-  justify-content: center;   /* center horizontally */
-  align-items: center;       /* center vertically */
-  min-height: 70vh;          /* occupy 70% of the viewport height */
+  justify-content: center;
+  align-items: flex-start;  /* stop vertical centering */
+  min-height: auto;         /* remove forced 70% viewport height */
+  padding: 1.5rem 1rem;     /* small inner padding for balance */
 }
 
 .contact-info {
