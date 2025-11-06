@@ -188,67 +188,15 @@ footer a {
 /* --- Contact Page Redesign --- */
 .contact-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically */
+  min-height: 70vh;          /* occupy 70% of the viewport height */
 }
 
-.contact-form, .contact-info {
-  flex: 1 1 350px;
-  background: #f9f9f9;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+.contact-info {
+  text-align: center;        /* optional – centers text inside */
 }
 
-.contact-form h3, .contact-info h3 {
-  margin-bottom: 1rem;
-  color: #0074d9;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-  font-family: inherit;
-}
-
-.contact-form button {
-  background: #00ccff;
-  color: #111;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.contact-form button:hover {
-  background: #0099cc;
-  color: #fff;
-}
-
-.contact-info p {
-  margin-bottom: 0.75rem;
-  line-height: 1.6;
-}
-
-.contact-info a {
-  color: #0074d9;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
 
 /* Smaller, neater map */
 .map iframe {
@@ -288,3 +236,28 @@ footer a {
     width: 90%;
   }
 }
+
+
+.about-image {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.intro-image {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.home-image {
+  display: block;
+  max-width: 85%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
